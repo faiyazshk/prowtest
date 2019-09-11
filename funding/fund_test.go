@@ -1,6 +1,9 @@
 package funding
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func BenchmarkFund(b *testing.B) {
 	// Add as many dollars as we have iterations this run
@@ -12,6 +15,7 @@ func BenchmarkFund(b *testing.B) {
 	}
 
 	if fund.Balance() != 0 {
+		fmt.Println("Running Test check fund balance.")
 		b.Error("Balance wasn't zero:", fund.Balance())
 	}
 }
