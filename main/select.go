@@ -13,6 +13,7 @@ func main() {
 		fmt.Println("no message received")
 	}
 
+	//test channel
 	msg := "hi"
 	select {
 	case messages <- msg:
