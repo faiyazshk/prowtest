@@ -14,6 +14,7 @@ func NewFund(initialBalance int) *Fund {
     }
 }
 
+//dummy comments
 // Methods start with a *receiver*, in this case a Fund pointer
 func (f *Fund) Balance() int {
     return f.balance
